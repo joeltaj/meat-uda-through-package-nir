@@ -1,0 +1,15 @@
+Method,Key parameter,Value
+CORAL,reg,0.001
+SA,var,0.95
+TCA,n_comp,50
+TCA,mu,0.1
+TCA,gamma,1 / n_features
+GFK,var,0.95
+SNV,epsilon,1e-10
+Pseudo-Label,n_iter,2
+Pseudo-Label,conf_thresh,0.8
+KMM,B,5.0
+KMM,n_ref,"min(200, n_s)"
+DS,reg,0.001
+TrAdaBoost,T,15
+TrAdaBoost,conf_thresh,0.75

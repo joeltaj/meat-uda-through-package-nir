@@ -1,0 +1,4 @@
+# Preserve dataset/model bytes used by provenance hashes on every platform.
+* text=auto eol=lf
+*.csv -text
+src/models.py -text

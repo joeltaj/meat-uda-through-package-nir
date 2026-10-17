@@ -1,0 +1,46 @@
+{
+  "versions": {
+    "python": "3.10.18",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scipy": "1.15.2",
+    "scikit-learn": "1.7.2",
+    "joblib": "1.5.3"
+  },
+  "platform": "Windows-10-10.0.26200-SP0",
+  "numerical_libraries": [
+    {
+      "user_api": "blas",
+      "internal_api": "mkl",
+      "num_threads": 1,
+      "prefix": "mkl_rt",
+      "filepath": "mkl_rt.2.dll",
+      "version": "2025.3-Product",
+      "threading_layer": "intel"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 1,
+      "prefix": "vcomp",
+      "filepath": "vcomp140.dll",
+      "version": null
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 1,
+      "prefix": "libiomp",
+      "filepath": "libiomp5md.dll",
+      "version": null
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 1,
+      "prefix": "libomp",
+      "filepath": "libomp.dll",
+      "version": null
+    }
+  ]
+}

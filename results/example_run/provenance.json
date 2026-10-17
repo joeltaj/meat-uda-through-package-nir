@@ -1,0 +1,113 @@
+{
+  "data_file": "Data_Parastar_corrected.csv",
+  "data_sha256": "63c3fcbf6c3ac92aac040062bd595198464256d23d25a917804f94697bc5bdb3",
+  "public_model_code_sha256": "3cf5c548baf2cebbb2673c881ee3fbb0c65f8b2ae18e32c53a5180acf6fd66cf",
+  "model_config": {
+    "RSDE": {
+      "n_estimators": 30,
+      "max_features_raw": 60,
+      "regularization": 1e-08
+    },
+    "CORAL": {
+      "reg": 0.001
+    },
+    "SA": {
+      "var": 0.95
+    },
+    "TCA": {
+      "n_components": 50,
+      "mu": 0.1,
+      "gamma": "1/n_features"
+    },
+    "GFK": {
+      "var": 0.95
+    },
+    "SNV": {
+      "epsilon": 1e-10
+    },
+    "PseudoLabel": {
+      "n_iter": 2,
+      "conf_thresh": 0.8
+    },
+    "KMM": {
+      "B": 5.0,
+      "n_ref": "min(200,n_source)"
+    },
+    "DS": {
+      "reg": 0.001
+    },
+    "TrAdaBoost": {
+      "T": 15,
+      "conf_thresh": 0.75
+    },
+    "H1_GFK_DTCA": {
+      "n_components": 50,
+      "mu_reg": 0.1,
+      "alpha": 1.0,
+      "var": 0.95
+    },
+    "H2": {
+      "adapted_experts": [
+        "GFK",
+        "CORAL"
+      ],
+      "scale": "median positive squared distance"
+    }
+  },
+  "versions": {
+    "python": "3.10.18",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scipy": "1.15.2",
+    "scikit-learn": "1.7.2",
+    "joblib": "1.5.3"
+  },
+  "origin": {
+    "type": "previously_completed_run",
+    "n_splits": 25,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "jobs": 4,
+    "elapsed_seconds": 1565.5805440999975,
+    "new_training_during_export": false,
+    "export_changes": [
+      "Method label standardized to H2",
+      "Module, function, and output-file names standardized"
+    ],
+    "numerical_definitions_checked": 42,
+    "numerical_logic_sha256": "d10231750a20d140d670e0da2d8b1bb82e732f30e5991d84555362428c805a12"
+  },
+  "artifacts": {
+    "all_methods_per_split.csv": "aaa514fc2bed6f686e47fa7a343547f0c375e3018200d1dec204beaf6bb563fd",
+    "holdout_metrics.csv": "d42f26f36ca2b83f896fb796013b0f292e877967c433e5fa58af3ab368063c11",
+    "holdout_predictions.csv": "0d385c987d764ee35698971eb98d477069a60a494ed2549160736cb3d6a1bdf5",
+    "duplex_manifest.csv": "bd30f24024692473a304d5ef50642e88f4f949d5195ef1223f3221f4d46abf10",
+    "outer_split_manifest.csv": "a9c1f39e060b25d5a3eba1ce065d44ac9b56781ef6c0ba1ffa32df41223dfe46",
+    "leakage_audit.csv": "c3e4744b39ed1fb978e98ca44e433305ab2fce5a0c28062028d8e6dd72e844ce"
+  }
+}

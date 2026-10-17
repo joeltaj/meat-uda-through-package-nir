@@ -1,0 +1,11 @@
+Table,Title,Type,CSV
+1,RSDE model configuration,Configuration,table01.csv
+2,In-domain DUPLEX holdout: accuracy and macro-F1,Experiment,table02.csv
+3,Domain adaptation parameter settings,Configuration,table03.csv
+4,Hybrid H1 and H2 configurations,Configuration,table04.csv
+5,Source-only and supervised reference performance,Experiment,table05.csv
+6,Domain adaptation performance on OM,Experiment,table06.csv
+7,Domain adaptation performance on TP,Experiment,table07.csv
+8,Domain adaptation performance on TB,Experiment,table08.csv
+9,H2 ablation: normalized performance-versus-fraction AUC,Experiment,table09.csv
+10,Paired H2 AUC differences and corrected confidence intervals,Experiment,table10.csv

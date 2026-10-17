@@ -1,0 +1,9 @@
+Parameter,Value,Role in the model
+Classifier,RSDE,Random Subspace Discriminant Ensemble
+Base classifier,LDA-style binary classifier,Uses pooled covariance and class priors
+n_estimators,30,Number of subspace classifiers constructed
+max_features,60,Wavelengths randomly selected per subspace
+Feature sampling,Without replacement,Avoids wavelength repetition within a subspace
+Probability aggregation,Mean probability,Probabilities averaged across all estimators
+Covariance regularization,1e-08,Stabilizes covariance-matrix inversion
+Output,Predicted class,Class with the highest mean probability

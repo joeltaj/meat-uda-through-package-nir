@@ -1,0 +1,5 @@
+-r requirements.txt
+
+# Notebook display and kernel versions used in the verified environment.
+ipython==8.37.0
+ipykernel==6.30.1

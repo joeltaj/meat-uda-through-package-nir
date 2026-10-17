@@ -1,0 +1,12 @@
+Hybrid method,Component,Parameter,Value / mechanism
+H1-GFK-DTCA,GFK + Discriminative TCA,var,0.95
+H1-GFK-DTCA,Discriminative TCA,n_comp,50
+H1-GFK-DTCA,Regularization,mu_reg,0.1
+H1-GFK-DTCA,Discriminative weight,lambda (alpha),1.0
+H2-Ensemble,Source-only expert,RSDE,OM model without transformation
+H2-Ensemble,GFK expert,GFK + RSDE,Uses the current unlabeled target subset
+H2-Ensemble,CORAL expert,CORAL + RSDE,Uses the current unlabeled target subset
+H2-Ensemble,Target information,Current target only,No access to the alternate packaged domain
+H2-Ensemble,Gating,Source/target centroid distance,Centroids from source + current unlabeled target subset
+H2-Ensemble,Gating scale (sigma),Median positive squared distance,Computed from source/current-target adaptation data only
+H2-Ensemble,Adapted block / final rule,Equal GFK-CORAL average + two-way gate,psource and padapt combined by source/target proximity
